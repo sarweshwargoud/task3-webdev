@@ -45,11 +45,17 @@ books data is stored in-memory (not in database)
 🚀 Features
 
 ✔ Fetch all books
+
 ✔ Add a new book
+
 ✔ Update an existing book by ID
+
 ✔ Delete a book by ID
+
 ✔ Modular route-handling structure
+
 ✔ Simple and clean Express server
+
 
 🛠️ Technologies Used
 
@@ -62,13 +68,17 @@ JavaScript (ES6)
 Postman / Thunder Client for API testing
 
 📦 Installation & Setup
+
 1️⃣ Clone or download the project
+
 cd book-api
 
 2️⃣ Install dependencies
+
 npm install
 
 3️⃣ Start the server
+
 npm start
 
 
@@ -84,8 +94,11 @@ Fetch all books.
 Example Response:
 
 [
+
   { "id": 1, "title": "Atomic Habits", "author": "James Clear" },
+  
   { "id": 2, "title": "The Alchemist", "author": "Paulo Coelho" }
+  
 ]
 
 🔹 POST /books
@@ -100,8 +113,10 @@ Content-Type: application/json
 Body (JSON):
 
 {
+
   "title": "Sapiens",
   "author": "Yuval Noah Harari"
+
 }
 
 🔹 PUT /books/:id
@@ -139,13 +154,17 @@ Response:
 You can use:
 
 🔸 Postman
+
 🔸 Thunder Client (VS Code)
+
 🔸 PowerShell / Terminal (Invoke-RestMethod / curl)
 
 Example using PowerShell:
+
 Invoke-RestMethod http://127.0.0.1:3000/books
 
 Example using curl:
+
 curl http://127.0.0.1:3000/books
 
 📌 Notes
